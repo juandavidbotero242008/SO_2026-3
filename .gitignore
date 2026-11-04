@@ -1,0 +1,15 @@
+# Archivos ejecutables compilados
+generadorCSV
+agentePais
+servidorISE
+*.out
+*.exe
+
+# Archivos de datos autogenerados
+encuestas_*.csv
+
+# Archivos objeto temporales (si compilas por módulos)
+*.o
+
+# Archivos de configuración locales del editor (ej. VS Code)
+.vscode/

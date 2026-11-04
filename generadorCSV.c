@@ -82,36 +82,36 @@ void generar_CSV(char *nombrep, float porcentaje)
 
     for (int i = 0; i < maxIn; i++)
     {
-        int sentimiento = rand() % 100 + 0;
-        fprintf(f, "%d,%d,%s,Industria,0,%d\n", contador, pais->id, pais->nombre, sentimiento);
+        double sentimiento = ((float)rand() / (float)RAND_MAX) * 100;
+        fprintf(f, "%d,%d,%s,Industria,0,%.2f\n", contador, pais->id, pais->nombre, sentimiento);
         contador++;
     }
 
     for (int i = 0; i < maxSe; i++)
     {
-        int sentimiento = rand() % 100 + 0;
-        fprintf(f, "%d,%d,%s,Servicios,1,%d\n", contador, pais->id, pais->nombre, sentimiento);
+        double sentimiento = ((float)rand() / (float)RAND_MAX) * 100;
+        fprintf(f, "%d,%d,%s,Servicios,1,%.2f\n", contador, pais->id, pais->nombre, sentimiento);
         contador++;
     }
 
     for (int i = 0; i < maxConsu; i++)
     {
-        int sentimiento = rand() % 100 + 0;
-        fprintf(f, "%d,%d,%s,Consumidores,2,%d\n", contador, pais->id, pais->nombre, sentimiento);
+        double sentimiento = ((float)rand() / (float)RAND_MAX) * 100;
+        fprintf(f, "%d,%d,%s,Consumidores,2,%.2f\n", contador, pais->id, pais->nombre, sentimiento);
         contador++;
     }
 
     for (int i = 0; i < maxCom; i++)
     {
-        int sentimiento = rand() % 100 + 0;
-        fprintf(f, "%d,%d,%s,Comercio,3,%d\n", contador, pais->id, pais->nombre, sentimiento);
+        double sentimiento = ((float)rand() / (float)RAND_MAX) * 100;
+        fprintf(f, "%d,%d,%s,Comercio,3,%.2f\n", contador, pais->id, pais->nombre, sentimiento);
         contador++;
     }
 
     for (int i = 0; i < maxConst; i++)
     {
-        int sentimiento = rand() % 100 + 0;
-        fprintf(f, "%d,%d,%s,Construccion,4,%d\n", contador, pais->id, pais->nombre, sentimiento);
+        double sentimiento = ((float)rand() / (float)RAND_MAX) * 100;
+        fprintf(f, "%d,%d,%s,Construccion,4,%.2f\n", contador, pais->id, pais->nombre, sentimiento);
         contador++;
     }
 
